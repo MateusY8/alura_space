@@ -208,6 +208,12 @@ table {
     width: 950px;
 }
 
+.img_redimensionada {
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; /* Define um tamanho máximo, se necessário */
+}
+
 .imagem__imagem {
     width: 100%;
     border-radius: 20px;
