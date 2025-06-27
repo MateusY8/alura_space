@@ -15,8 +15,8 @@ class Fotografia(models.Model):
     legenda = models.CharField(max_length=150, null=False, blank=False)
     categoria = models.CharField(max_length=100, choices=OPCOAES_CATEGORIA, default='')
     descricao = models.TextField(null=False, blank=False)
-    foto = models.ImageField(upload_to='fotos/%Y/%m/%d/', blank=True)
-    publicada = models.BooleanField(default=False)
+    foto = models.ImageField(upload_to='fotos/%d/%m/%Y/', blank=True)
+    publicada = models.BooleanField(default=True)
     data_criacao = models.DateTimeField(default=datetime.now, blank=False)
     usuario = models.ForeignKey(
         to=User,

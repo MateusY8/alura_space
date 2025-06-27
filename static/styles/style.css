@@ -205,14 +205,9 @@ table {
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 0 0;
-    width: 950px;
+    width: 100%;
 }
 
-.img_redimensionada {
-    width: 100%; /* Ajusta a largura para 100% do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 300px; /* Define um tamanho máximo, se necessário */
-}
 
 .imagem__imagem {
     width: 100%;
@@ -388,3 +383,4 @@ table {
     border: 2px solid #7B78E5;
     cursor: pointer;
 }
+
